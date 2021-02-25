@@ -6,8 +6,8 @@ public partial class SessionHit : System.Web.UI.Page
     {
         UniqueSessionsID.Text = "Your unquies session ID is:" + Session.SessionID;
 
-        if (Session.Timeout != 1440)
-            Session.Timeout = 1440;
+        if (Session.Timeout != 1445)
+            Session.Timeout = 1445;
         if (Session.Keys.Count == 0)
         {
             Session["PageHits"] = 1;
